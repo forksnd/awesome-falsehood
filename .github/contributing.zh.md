@@ -32,7 +32,7 @@
 
 您的拉取请求应该通过 [官方 Awesome List 的检查器](https://github.com/sindresorhus/awesome-lint)。
 
-这里不需要额外的工作，因为它已经 [通过 GitHub actions 集成](https://github.com/kdeldycke/awesome-falsehood/tree/main/.github/workflows)。
+这里不需要额外的工作，因为它已经 [通过 GitHub actions 集成](https://github.com/forksnd/awesome-falsehood/tree/main/.github/workflows)。
 
 您仍然可以通过本地运行检查器来预测问题：
 
@@ -78,8 +78,6 @@ $ npx awesome-lint
   - [`archive.org`](https://archive.org) 用于其他任何内容
 
 - 某些平台将内容置于身份验证之后，并对匿名访问返回 `403`（Quora、大多数社交网络讨论、没有归档副本的付费新闻网站）：不要使用，请寻找替代来源。
-
-- 当浏览器仍能获取完整文章时，屏蔽爬虫的域名返回的 `403` 并不是死链。保留原始 URL，并将该域名加入 `pyproject.toml` 的 `[tool.lychee] exclude`：归档它会让读者为了迎合检查器而失去实时页面。只有对读者也已失效的 `404` 才需要替换。`medium.com` 就是以这种方式排除的。
 
 - 当 GitHub 仓库已转移到新所有者时，请将 URL 更新为新的规范位置，而不是依赖重定向（旧的 `OWNER/REPO` 命名空间可被任何人重新认领，这会使链接指向不相关的内容）。
 
